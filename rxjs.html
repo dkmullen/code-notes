@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/code.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>RXJS</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<h1>RXJS</h1>
+	</header>
+
+    <div class="margin-b">
+        <code>
+            <p>const myFunction = this.ws.call('user.query').pipe(</p>
+            <p class="indent">map(({ value }) => e.target.value),</p>
+            <p class="indent">filter(text => text.length > 2),</p>
+            <p class="indent">debounceTime(100),</p>
+            <p class="indent">switchMap(() => ajax('api/endpoint'))</p>
+            <p>);</p>
+        </code>
+    </div>
+
+    <div class="margin-b">
+        <code>
+            <p>myFunction.subscribe(data => {</p>
+            <p>});</p>
+        </code>
+    </div>
+
+    <div class="margin-b">
+        <p><code>map</code> applies the function to every item</p>
+        <p><code>filter</code> returns and passes on anything that fits the criteria (ie is true)</p>
+        <p><code>debounceTime</code> the wait time or length of pause between key strokes before the flow continues</p>
+        <p><code>switchMap</code> ignores results of requests that have been sent and then superceded by more recent ones</p>
+    </div>
+    <hr>
+
+    <div class="margin-b">
+        <img src="pics/getforecast.jpg">
+    </div>
+
+    <div class="margin-b">
+        <p><code>HttpParams</code> is an Angular package used to structure an http request</p>
+        <p><code>pluck</code> selects the property off an object to emit</p>
+        <p><code>mergeMap</code> in contrast to <code>switchMap</code>, keeps inner requests alive </p>
+        <p><code>of</code> emits the values of an array in sequence, then emits 'complete'</p>
+    </div>
+
+
+
+</div>
+</body>
+</html>
