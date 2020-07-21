@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/code.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>Spread operators</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header><h1>Spread Operators</h1></header>
+
+		<p class="margin-b">Pass an array to a function: <code>my array = [1,2,3,4,5,6]</code> and <code>
+            myFunction(...myArray){ }</code> allows me to call func with any number of args. Note
+            that myFunction([myArray]) won't work.
+        </p>
+        <img src="pics/spread1.png">
+
+        <p class="margin-b">Copy an array (but only one level?): <code>colors = ['red', 'blue', 'green']; copy = [...colors]</code> creates a 
+        new array, not a reference. Or combine with <code>combinedArr = [...arr1, ...arr2]</code> Equivilent to 
+    <code>arr1.concat(arr2)</code></p>
+
+    <p class="margin-b">
+        Objects: <code>const neighbor = {name: 'Bill', age: 45}; 
+            const house = {color: white, fence: false}; const combined = {...neighbor, ...house, street: 'Elm'};
+        </code>
+    </p>
+
+    <p class="margin-b">
+        Copy an object (but only one level?): <code>const friend = {...neighbor}</code>
+    </p>
+
+
+		
+		
+	
+
+
+</div>
+</body>
+</html>
